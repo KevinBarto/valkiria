@@ -42,6 +42,10 @@ span{
     
 }
 
+.tituloTrans:nth-child(2):hover{
+    transform:translateX(800px);
+}
+
 .baner{
     background-image: url(../imagenes/fondo.jpg);
     background-position: center;
@@ -67,9 +71,6 @@ span{
     
 }
 
-.bordes:hover{
-    
-}
 .contenido{
     margin: 35px;
     padding: 30px;
@@ -141,7 +142,7 @@ span{
 
 
 .fotokevin{
-    grid-area: ;
+    
     grid-column-start:1 ;
     grid-column-end: 2;
     grid-row-start: 3;
