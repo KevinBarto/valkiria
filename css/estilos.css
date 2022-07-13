@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.pag{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction:column;
+}
+
+.navegador{
+    background-color: rgb(1, 105, 1);
+    width: 100%;
+    padding: 50px;
+    display:flex;
+    justify-content:end;
+}
+
+.navegador nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #042903;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border-bottom: 2px solid white; */
+    justify-content: start;
+}
+
+span{
+    color:rgb(1, 105, 1);
+    text-decoration: underline 2px white
+    
+}
+
+.baner{
+    background-image: url(../imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: auto;
+    justify-content: center;
+    height: 105vh;
+}
+
+.redes{
+    height: 70px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.bordes{
+    height: auto;
+    border:8px outset #1C851B;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 0px 30px 30px 30px;
+    
+}
+
+.bordes:hover{
+    
+}
+.contenido{
+    margin: 35px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 255px 255px;
+}
+.fotologo{
+    background-image:url(../imagenes/logo\ insta.jpg);
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: auto;
+    height: auto;
+    grid-area: 1 / 1 / 3 / 2;
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    
+}
+
+.titulo{
+    /* grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px
+    
+
+}
+
+
+
+.parrafo{
+    /* grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    grid-area: 2 / 2 / 3 / 3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+
+.fotohabilidades{
+    width: 500px;
+}
+
+.fotoreact{
+    width: 255px;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+} 
+
+.contenidoEquipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 255px 255px 255px 255px;
+}
+
+
+.fotokevin{
+    grid-area: ;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 500px;
+}
+
+.tituloEquipo{
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+} 
+
+.pie{
+    border-top: 2px solid #042903;
+    text-align: center;
+    background-color: rgb(1, 105, 1);
+    padding:30px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+
+.derechos{
+    color:white;
+    grid-area: 1/1/2/2
+}
+
+.contactosPie{
+    color: white;
+    grid-area: 2/2 3/3;
+}
+@media (width < 950px){
+    
+.contenido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 10px;
+    
+}
+
+.fotologo{
+    height: 105vh;
+}
+
+.titulo{
+    padding: 30px;
+    text-decoration: underline 2px #1C851B;
+}  
+}
+
+@media (width < 700){
+    .fotohabilidades{
+        height:250px;
+    }
+}
