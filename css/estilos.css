@@ -70,7 +70,7 @@ span{
     padding: 0px 30px 30px 30px;
     
 }
-
+/* home */
 .contenido{
     margin: 35px;
     padding: 30px;
@@ -108,8 +108,6 @@ span{
 
 }
 
-
-
 .parrafo{
     /* grid-column-start:2 ;
     grid-column-end: 3;
@@ -119,7 +117,6 @@ span{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-
 
 
 .fotohabilidades{
@@ -134,29 +131,87 @@ span{
     grid-row-end: 3; 
 } 
 
+/* equipo */
 .contenidoEquipo{
+    margin: 35px;
+    padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 255px 255px 255px 255px;
+    grid-template-rows: 255px 255px;
 }
-
 
 .fotokevin{
-    
-    grid-column-start:1 ;
+    grid-area: 1 / 1 / 3 / 2;
+    /* grid-column-start:1 ;
     grid-column-end: 2;
     grid-row-start: 3;
-    grid-row-end: 4;
-    height: 500px;
+    grid-row-end: 4; */
+    height: 50vh;
 }
 
-.tituloEquipo{
-    grid-column-start:2 ;
+.parrafoNombre{
+    /* grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 4; */
+    grid-area: 1 / 2 / 2 / 3;
 } 
 
+.parrafoEquipo{
+    /* grid-area: 2 / 2 / 3 / 3; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:2 ; 
+    grid-column-end: 3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* proyecto */
+.tituloProyecto{
+    margin: 35px;
+    padding: 30px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+
+.pryectos{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:start;
+}
+/* contacto */
+.contacto{
+    margin: 35px;
+    padding: 30px;
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+input{
+    justify-content: end;
+    background-color: gray;
+    color:aliceblue
+}
+
+textarea{
+    justify-content: end;
+    background-color: gray;
+    color:aliceblue
+}
+
+label{
+    background-color: rgb(6, 204, 6);
+    border-radius:20% 2px solid black ;
+    text-align: center;
+    justify-content:start;
+}
+
+/* footer */
 .pie{
     border-top: 2px solid #042903;
     text-align: center;
